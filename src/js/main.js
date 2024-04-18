@@ -73,7 +73,7 @@ console.log(numeroDescender--) //98
 console.log(numeroDescender--) //97
 console.log(numeroDescender--) //96
 console.log(numeroDescender--) //95
-console.log(numeroDescender-=40) //56
+console.log(numeroDescender-=40) //55
 
 console.groupEnd()
 
@@ -102,5 +102,26 @@ console.log(8 >= 8) //true
 console.log(8 < 5) //false
 console.log(8 < 8) //true
 console.log(8 <= 8) //true 
+
+console.groupEnd()
+
+// Operadores lógicos
+
+console.groupCollapsed("Operadores lógicos")
+
+//          true  && true 
+console.log(1 < 5 && 8 > 2) // true -> con AND (&&) todas tienen que ser true, para que sea true
+
+//            f        t        f        f  
+console.log(1 > 6 || 5 > 1 || 8 < 2 || 9 > 50) // true -> con OR (||) minimo una true, para que sea true
+
+// Mezclados -> paréntesis son muy importantes
+
+//                   false            true             true          true
+console.log(("usuario" == "Usuario" && 5 > 2) ||("rol" === "rol" && 6 == "6"))
+//                                   F        ||                  T            ->True
+
+let variable10 = true
+!variable // false -> ! = not
 
 console.groupEnd()
