@@ -31,7 +31,7 @@ console.groupEnd()
 
 // Operadores aritméticos
 
-console.group("Operadores aritméticos")
+console.groupCollapsed("Operadores aritméticos")
 
 let num1 = 10
 let num2 = 5
@@ -52,3 +52,28 @@ Resto: ${resto}
 `)
 
 console.groupEnd()
+
+// Operadores de incremento y decremento
+
+console.groupCollapsed("Operadores de incremento y decremento")
+
+let numeroIncrementar = 10
+console.log(numeroIncrementar++) //11
+console.log(numeroIncrementar++) //12
+console.log(numeroIncrementar++) //13
+console.log(numeroIncrementar++) //14
+console.log(numeroIncrementar++) //15
+console.log(numeroIncrementar+=2) //17
+console.log(numeroIncrementar+=2) //19
+console.log(numeroIncrementar++) //20
+
+let numeroDescender = 100 
+console.log(numeroDescender--) //99
+console.log(numeroDescender--) //98
+console.log(numeroDescender--) //97
+console.log(numeroDescender--) //96
+console.log(numeroDescender--) //95
+console.log(numeroDescender-40) //56
+
+console.groupEnd()
+
