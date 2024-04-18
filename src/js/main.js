@@ -15,7 +15,7 @@ let variable8 = { "nombre": "Caro", "edad": 26 } // El key funciona sin "" tambi
 let variable9 = function name(params) { }
 
 console.log(
-    `Variable: ${(typeof variable)}
+`Variable: ${(typeof variable)}
 Variable 2: ${(typeof variable2)}
 Variable 3: ${(typeof variable3)}
 Variable 4: ${(typeof variable4)}
@@ -73,7 +73,34 @@ console.log(numeroDescender--) //98
 console.log(numeroDescender--) //97
 console.log(numeroDescender--) //96
 console.log(numeroDescender--) //95
-console.log(numeroDescender-40) //56
+console.log(numeroDescender-=40) //56
 
 console.groupEnd()
 
+// Operadores de comparación
+
+console.groupCollapsed("Operadores de comparación")
+
+console.log(5 + 9 == 20) // == igualdad -> false
+console.log(9 ===  "9") // === estricto, compara tipo también -> false
+console.log(2 != 9) // desigualdad -> true
+console.log("2" !== 2) // estricto -> true
+
+const contraseña = "12345"
+const contraseñaConfirmacion = "12345"
+
+if (contraseña === contraseñaConfirmacion) {
+    console.log("Usuario registrado")
+}
+
+//Mayor que
+console.log(8 > 5) //true 
+console.log(8 > 8) //false
+console.log(8 >= 8) //true 
+
+//Menor que
+console.log(8 < 5) //false
+console.log(8 < 8) //true
+console.log(8 <= 8) //true 
+
+console.groupEnd()
