@@ -1,2 +1,2 @@
-# 04-Operadores
-Manejo de operadores, JS.
+# 04 Manejo de Operadores JS
+
